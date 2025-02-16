@@ -67,7 +67,6 @@ bool MyApp::OnInit() {
   string imagePath = wxApp::argv[1].ToStdString();
   double *scale = new double;
   wxApp::argv[2].ToDouble(scale);
-  *scale /= 100;
   int *channelBits = new int;
   wxApp::argv[3].ToInt(channelBits);
   int *mode = new int;
